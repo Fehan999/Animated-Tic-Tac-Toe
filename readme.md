@@ -33,6 +33,8 @@ A modern and responsive Tic-Tac-Toe game built with HTML, CSS, and JavaScript, f
 
 That's it! 🎮
 
+Vercel Live Link: https://animated-tic-tac-fetgu0qt6-fehan999s-projects.vercel.app/
+
 🧠 How It Works
 
 The game stores the 9 board positions in a JavaScript array. Each click places the current player's symbol, then the game checks the possible winning combinations. When someone wins, the score is updated and animations, sound, confetti, and particles are triggered.
