@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tic-Tac-Toe</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="light">
+    <canvas id="confettiCanvas"></canvas>
+
+    <div class="game-card">
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl font-black tracking-tight"> Tic-Tac-Toe </span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <span class="status-badge" id="statusMessage"> turn </span>
+
+          <button class="btn-icon" id="themeToggle" aria-label="Toggle theme">
+            🌓
+          </button>
+        </div>
+      </div>
+
+      <div class="board-grid" id="boardContainer"></div>
+
+      <div class="flex flex-wrap items-center justify-between gap-3 mt-5">
+        <div class="flex flex-wrap items-center gap-1.5 text-sm">
+          <span class="score-badge">
+            <span class="text-indigo-600 font-bold">✕</span>
+            <span class="score-number font-bold" id="scoreX">0</span>
+          </span>
+
+          <span class="score-badge">
+            <span class="text-rose-600 font-bold">◯</span>
+            <span class="score-number font-bold" id="scoreO">0</span>
+          </span>
+
+          <span class="score-badge text-slate-500">
+            <span>draw</span>
+            <span class="score-number font-bold" id="scoreDraws">0</span>
+          </span>
+        </div>
+
+        <button class="btn-reset" id="resetButton">⟳ New game</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
